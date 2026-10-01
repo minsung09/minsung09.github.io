@@ -132,3 +132,12 @@ html[data-theme=light] .home-kicker-end{color:#151515}
   .architecture-tech{font-size:.75rem}
   .case-point-list,.case-decision-list{grid-template-columns:1fr;gap:20px}
 }
+
+/* Long-form engineering case studies. */
+.case-point-list,.case-decision-list{grid-template-columns:1fr;gap:32px}
+.case-point,.case-decision{padding-top:24px}
+.case-point h3,.case-decision h3{font-size:1.25rem;margin-bottom:16px;letter-spacing:-.025em}
+.case-point p,.case-decision p,.case-prose p,.case-result p{font-size:1.06rem;line-height:1.95;word-break:keep-all;overflow-wrap:anywhere;max-width:780px;color:#505a5c;margin:0 0 16px}
+.case-point p:last-child,.case-decision p:last-child,.case-prose p:last-child,.case-result p:last-child{margin-bottom:0}
+.case-decision>span{font-size:.78rem;color:#66736c}
+@media(max-width:700px){.case-point h3,.case-decision h3{font-size:1.13rem}.case-point p,.case-decision p,.case-prose p,.case-result p{font-size:1rem;line-height:1.9}.case-point-list,.case-decision-list{gap:26px}}
