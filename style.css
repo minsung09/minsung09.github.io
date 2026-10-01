@@ -76,3 +76,59 @@ html[data-theme=light] .home-kicker-end{color:#151515}
 .gotion-logo{width:72%;height:68%;left:14%;top:11%}
 .work-cover .cover-overline,.work-cover .cover-title{z-index:2}
 @media(max-width:700px){.tongchoo-logo{width:72%;left:14%;height:58%;top:17%}.gotion-logo{width:77%;left:11.5%;height:62%;top:15%}}
+
+/* Project case studies: one consistent reading order for both projects. */
+.case-hero{padding-bottom:42px}
+.case-subtitle{max-width:880px;color:#515962}
+.case-facts{grid-template-columns:minmax(140px,.7fr) minmax(170px,1fr) minmax(300px,2fr);gap:28px;margin-top:42px}
+.case-facts>div{gap:13px}
+.case-facts dd{font-size:1rem;color:#252b30}
+.case-fact-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.case-fact-links a{border-bottom:1px solid #838a8e;padding-bottom:4px;line-height:1.4}
+.case-fact-links a:hover{border-color:#15191c;color:#111}
+.case-stack{display:flex;flex-wrap:wrap;gap:8px}
+.case-stack span{display:inline-flex;align-items:center;padding:6px 10px;border:1px solid #c9cccb;border-radius:2px;background:#e9eae6;font-size:.78rem;line-height:1.3;color:#343a3d}
+.case-main-full{max-width:100%;padding-top:8px}
+.case-main-full>.case-section{display:grid;grid-template-columns:220px minmax(0,1fr);gap:36px;align-items:start;margin:0;padding:43px 0;border-bottom:1px solid #d6d9d5}
+.case-main-full>.case-section:last-child{border-bottom:0}
+.case-main-full .case-section-heading{position:sticky;top:108px;display:flex;align-items:baseline;gap:12px;margin:0}
+.case-main-full .case-section-heading h2{font-size:1.32rem;line-height:1.4}
+.case-main-full .case-section>p{max-width:780px;margin:0}
+.case-architecture{margin:0;background:#1c2020;color:#f1f2ee;padding:26px}
+.architecture-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.architecture-step{position:relative;display:flex;flex-direction:column;min-height:150px;border:1px solid #4c5350;background:#272c2a;padding:17px}
+.architecture-step:not(:first-child)::before{content:"";position:absolute;right:100%;top:50%;width:15px;border-top:1px solid #8a9790}
+.architecture-index{font:500 .62rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;color:#b1bbb4}
+.architecture-step strong{font-size:1.16rem;line-height:1.25;margin-top:28px;letter-spacing:-.035em}
+.architecture-tech{font-size:.77rem;line-height:1.5;color:#b3bcb7;margin-top:6px}
+.case-architecture figcaption{font-size:.76rem;line-height:1.65;color:#a8b3ad;margin-top:17px}
+.case-point-list,.case-decision-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.case-point,.case-decision{border-top:1px solid #bfc6c1;padding-top:18px}
+.case-point h3,.case-decision h3{font-size:1.04rem;line-height:1.5;margin:0 0 9px;color:#22282b}
+.case-point p,.case-decision p{font-size:.99rem;line-height:1.8;margin:0;color:#606a6c}
+.case-decision>span{display:block;font:500 .65rem ui-monospace,SFMono-Regular,Menlo,monospace;color:#7d8783;margin-bottom:13px}
+.case-result{padding:0;border:0}
+.case-result>p{font-size:1.12rem;color:#38413d;max-width:780px}
+@media(max-width:1000px){
+  .case-facts{grid-template-columns:1fr 1fr}
+  .case-facts>div:last-child{grid-column:1/-1}
+  .case-main-full>.case-section{grid-template-columns:170px minmax(0,1fr);gap:24px}
+}
+@media(max-width:700px){
+  .case-hero{padding:35px 0 28px}
+  .case-hero h1{font-size:clamp(3.5rem,14vw,5rem)}
+  .case-facts{grid-template-columns:1fr 1fr;gap:23px 15px;margin-top:32px}
+  .case-facts>div:last-child{grid-column:1/-1}
+  .case-facts dd{font-size:.87rem}
+  .case-main-full{padding-top:0}
+  .case-main-full>.case-section{display:block;padding:32px 0}
+  .case-main-full .case-section-heading{position:static;margin-bottom:18px}
+  .case-main-full .case-section-heading h2{font-size:1.2rem}
+  .case-architecture{padding:17px}
+  .architecture-steps{grid-template-columns:1fr;gap:13px}
+  .architecture-step{min-height:94px;padding:13px 15px}
+  .architecture-step:not(:first-child)::before{right:auto;left:50%;top:auto;bottom:100%;width:1px;height:13px;border-top:0;border-left:1px solid #8a9790}
+  .architecture-step strong{margin-top:14px;font-size:1rem}
+  .architecture-tech{font-size:.75rem}
+  .case-point-list,.case-decision-list{grid-template-columns:1fr;gap:20px}
+}
